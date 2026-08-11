@@ -1,12 +1,10 @@
 import { Text, View } from "react-native";
-import { Styles } from "./Style";
+import { HeaderStyles } from "./HeaderStyles";
 
-export const Header = () =>{
-  return (
-    <View style={Styles.header}>
-        <Text style={Styles.headerTitle}>
-            React List
-        </Text>
-    </View>
+export const Header = () => {
+    return (
+        <View style={HeaderStyles.header}>
+            <Text style={HeaderStyles.headerTitle}>React List</Text>
+        </View>
     )
 }

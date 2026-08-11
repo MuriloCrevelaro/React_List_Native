@@ -1,0 +1,7 @@
+{
+    "taskpoint": [
+        {"id": 1, "descricao": "Estudar React"},
+        {"id": 2, "descricao": "Estudar React Native"},
+        {"id": 3, "descricao": "Estudar ReactJS"}
+    ]
+}

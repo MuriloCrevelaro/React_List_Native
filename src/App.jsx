@@ -5,18 +5,21 @@ import { Styles } from "./Styles";
 import { Header } from "./components/header/Header";
 import { FormTask } from "./components/formtask/FormTask";
 import { TaskList } from "./components/tasklist/TaskList";
+import { TaskProvider } from "./context/TaskContext";
 
 
 function App() {
   return (
     <SafeAreaProvider>
       <SafeAreaView style={Styles.safeArea}>
-        <View style={Styles.container}>
-          <Header />
-          <FormTask />
-          <TaskList />
-          <StatusBar style="auto" />
-        </View>
+        <TaskProvider>
+          <View style={Styles.container}>
+            <Header />
+            <FormTask />
+            <TaskList />
+            <StatusBar style="auto" />
+          </View>
+        </TaskProvider>
       </SafeAreaView>
     </SafeAreaProvider>
   );
